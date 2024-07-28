@@ -17,11 +17,13 @@ function check(age,index){
     console.log(index);
     return age>18
 }
-const numSome=array1.some(check)
+const  array=[12,23,34,45]
+const numSome=array.some(check)
 console.log(numSome);
 
 //FILL()  replace the element with given element & overwrites the  original array
-const fill=array1.fill(55,1,2)
+const  array2=[12,23,34,45]
+const fill=array2.fill(55,1,2)
 console.log(fill);
 
 
@@ -29,14 +31,15 @@ console.log(fill);
 function checknum(value){
     return value>18
 }
-array=[2,5,23,43,1,3]
-console.log(array.find(checknum));
+array3=[2,5,23,43,1,3]
+console.log(array3.find(checknum));
 
 //FIND INDEX()  return the first index of an element which passes the test
 function index(value){
     return value>23
 }
-console.log(array.findIndex(index));
+array4=[2,5,23,43,1,3]
+console.log(array4.findIndex(index));
 
 //FLAT() concatinating sub arrays into new array
 myarr=[1,2,[[3,4],5]]
@@ -118,16 +121,22 @@ const filter=[9,15,34,41,5]
 console.log('before filtering',filter);
 console.log('after filtering',filter.filter(filtered));
 
-//REDUCE
+//REDUCE()
 const reduce=[3,2,5,31,8,10]
  function red(acc,ele){
     return acc+ele
  }
  console.log('after doing sum using ',reduce.reduce(red));
 
- //MAP 
+ //MAP ()
  const mapping=[3,56,21,34,11]
  function map(acc){
     return acc*3
  }
 console.log(mapping.map(map));
+
+//FOREACH()
+const arrFruitss = ['Banana','Apple','Jackfruit','Grape','Pineapple']
+arrFruitss.forEach((fruit)=>{
+    console.log(fruit+ " Juice");
+})
